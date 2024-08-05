@@ -16,7 +16,7 @@
 @endsection
 
 @section('title')
-<title>Schedule - DevConf.CZ</title>
+<title>Schedule - DevConf.US Day 0</title>
 @endsection
 
 
@@ -58,12 +58,16 @@
                  "Highlight findings" => "table-active", "Breakout Sessions" => "table-success");
     $streams = array();
 	$schedule = array(
+        array("start"=>"11:45", "items"=>array(
+    	    array("end"=>"12:30", "length"=>10, "name"=>"Check In & Light Lunch")
+    	)),
+
 	    array("start"=>"12:30", "items"=>array(
-    	    array("end"=>"12:40", "length"=>10, "name"=>"Arrival & Light Lunch & Welcome")
+    	    array("end"=>"12:40", "length"=>10, "name"=>"Welcome Address")
     	)),
     	
         array("start"=>"12:40", "items"=>array(
-            array("end"=>"1:15", "length"=>35, "name"=>"Thoughts on AI & Open Source & State of the Union", "description"=>"", "track"=>"Topic Intro",
+            array("end"=>"1:15", "length"=>35, "name"=>"Thoughts on AI & Open Source, "description"=>"", "track"=>"Topic Intro",
                 "speakers"=>array(
                     array("name"=>"Kelsey Hightower"),
                 )
@@ -81,25 +85,24 @@
         )), 
         
 		array("start"=>"2:45", "items"=>array(
-            array("end"=>"3:00", "length"=>15, "name"=>"State of the Union: Democratizing AI & Reducing Bias", "description"=>"", "track"=>"Topic Intro",
+            array("end"=>"3:00", "length"=>15, "name"=>"Democratizing AI", "description"=>"", "track"=>"Topic Intro",
                 "speakers"=>array(
-                    //array("name"=>"Jen Krieger"),
+                    array("name"=>"Jen Krieger"),
                 )
             )
         )),
         
         array("start"=>"3:00", "items"=>array(
-            array("end"=>"3:45", "length"=>45, "name"=>"Democratizing AI & Reducing Bias Breakout Sessions", "description"=>"Break into 4 smaller groups<ul><li>Each group has facilitator, scribe, and discussion leader/panelist</li><li>Where do we need to go with democratization of AI and reducing bias?</li></ul>", "track"=>"Breakout Sessions")
+            array("end"=>"3:45", "length"=>45, "name"=>"Democratizing AI Breakout Sessions", "description"=>"Break into 4 smaller groups<ul><li>Each group has facilitator, scribe, and discussion leader/panelist</li><li>Where do we need to go with democratization of AI and reducing bias?</li></ul>", "track"=>"Breakout Sessions")
         )),            
         array("start"=>"3:45", "items"=>array(
-            array("end"=>"4:15", "length"=>30, "name"=>"Democratizing AI & Reducing Bias Panel", "description"=>"4 Discussion Leaders form a panel, moderated panel summarizes 4 rooms outcomes", "track"=>"Highlight findings")
+            array("end"=>"4:15", "length"=>30, "name"=>"Democratizing AI Panel", "description"=>"4 Discussion Leaders form a panel, moderated panel summarizes 4 rooms outcomes", "track"=>"Highlight findings")
         )),
 
 		array("start"=>"4:15", "items"=>array(
             array("end"=>"4:30", "length"=>15, "name"=>"State of the Union: Responsible AI", "description"=>"", "track"=>"Topic Intro",
                 "speakers"=>array(
-                   // array("name"=>"Josh Boyer"),
-                   // array("name"=>"Heidi Lanford"),
+                   array("name"=>"Heidi Lanford"),
                 )
             )
         )),
@@ -125,7 +128,8 @@
 	<div class="row">
 		<div class="h1 mx-5 mont-700 underline position-relative">Day 0 Schedule</div>
 		
-		<p class="os-400 mx-5 mt-4">Conference schedule is available <a href="https://www.devconf.info/us/schedule/">here</a>.</p>
+        <p class="os-400 mx-5 mt-4">Location: 43 Hawes St Brookline, MA 02446</p>
+		<p class="os-400 mx-5 mt-4">DevConf.US conference schedule for August 14th to 16th is available <a href="https://www.devconf.info/us/schedule/">here</a>.</p>
 		
 	</div>
 </section>
